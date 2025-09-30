@@ -5,14 +5,14 @@ const fs = require('fs');
 async function createKeystore() {
   // CLAVE PRIVADA: Por favor, no la mantengas directamente en el código de producción.
   // Considera usar variables de entorno o un método seguro para introducirla.
-  const privateKey = 'TuCkavePrivadaDeWalletAqui'; 
+  const privateKey = process.env.PRIVATE_KEY;; 
 
   // Crea un objeto Wallet a partir de la clave privada
   const wallet = new Wallet(privateKey);
 
   // CONTRASEÑA DEL KEYSTORE: Esta contraseña se usará para cifrar el archivo keystore.
   // Asegúrate de usar una contraseña fuerte y de recordarla.
-  const keystorePassword = 'TuContrasenaParaElKeystoreAqui'; 
+  const keystorePassword = process.env.KEYSTORE_PASSWORD; 
 
   // Exporta el keystore cifrado
   const keystore = await wallet.encrypt(keystorePassword);
