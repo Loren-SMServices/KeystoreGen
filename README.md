@@ -59,5 +59,3 @@ Esta contraseña es fundamental para acceder a tu wallet.
 ```
 
 ***
-
-¿Quieres que adapte este README para un **uso más técnico** (ej. con Docker, librerías relacionadas, flujos de integración) o prefieres dejarlo en este nivel sencillo de usuario final?
